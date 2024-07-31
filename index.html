@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="animations.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.cdnfonts.com/css/apercu-mono-pro" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <title>Personal Portfolio Webpage</title>
+        <script src="myscripts.js"></script>
+        <script defer src="app.js"></script>
+        <script src="svg.js"></script>
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="#" id="my-name"><div class="logo">M.</div></a>
+            <ul>
+                <li><a href="#about_me_scroll">About Me</a></li>
+                <li><a href="#projects_scroll">Projects</a></li>
+                <li><a href="#contact_me_scroll">Contacts</a></li>
+            </ul>
+        </nav>
+        <!-- <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-50px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+            </script> -->
+        <section id="welcome-section" class="welcome-section">
+            <div class="welcome-greet"> <h1>Nice to meet you, I'm Mark!</h1>
+                <div class="ppic">
+                    <img id="profile-pic" class="rounded" src="https://i.postimg.cc/rwFHR6kN/IMG-8208.avif" alt="Profile image of Mark">
+                </div>
+            </div>    
+            <div class="arrows">
+                <svg width="59" height="35" viewBox="0 0 59 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M54.9307 3.9999L29.4654 18.3999L4.00014 3.9999" stroke="#FF5107" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M54.9307 16.6L29.4654 31L4.00014 16.6" stroke="#FF5107" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </div>
+        </section>
+
+        <div class="section-divider"><div id="about_me_scroll"></div></div>
+
+        <section id="about_me">
+            <h1 class="zipped">About me 👈</h1>
+            <div class="text-img">
+                <img class="sub-img hidden-left" src="https://i.postimg.cc/3rFSWLrd/IMG-2410.jpg" alt="image of me climbing."> 
+                <div class="textbox hidden-right">
+                    <p>
+                        I am a <a class="emphasis">third year</a> student at the <a class="emphasis">University of Toronto</a> studying <a class="emphasis">Computer Science Specialist Program.</a>
+                    </p>
+                    <p>
+                        <a class="emphasis">Python, Java, C, JavaScript, HTML5, CSS, R </a> are some of the laguages I've worked with. 
+                    </p>
+                    <p>
+                        I love to go climbing, listen to music, or watch movies in my free time! 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider">
+        </div>
+        
+        <section id="projects"> <div id="projects_scroll"></div>
+
+            <h1 class="blurred">Projects 🗂️</h1>
+            <div class="project-tiles">
+                <div class="project-tile zipped">
+                    <div class="tile-head">
+                        <a>
+                            <img class="tile-img" src="https://i.postimg.cc/RhbXkdk8/image.png" alt="frogger project image">
+                        </a>
+                    </div>
+                    <div class="tile-body">
+                        <h2> Frogger Game</h2>
+                        <p class="project-description">A flash game from the past by the name of Frogger. Made on Assembly. + Text about the project and software I used highlighted.
+                            And a Link to the repository on github.
+                        </p>
+                    </div>
+                    <div class="tile-foot">
+                        <a class="repo fa fa-github" href="https://github.com/marko0124/CSC258-Frogger-Project" rel="noreferrer noopener" target="_blank"></a>
+                        <a href="https://github.com/marko0124/CSC258-Frogger-Project" rel="noreferrer noopener" target="_blank"><p>   Repo</p></a> 
+                     </div>  
+                </div>
+                
+                <div class="project-tile zipped">
+                    <div class="tile-head">
+                        <a>
+                            <img class="tile-img">
+                        </a>
+                    </div>
+                    <div class="tile-body">
+                    </div>
+                </div>
+                <div class="project-tile zipped">
+                    <div class="tile-head">
+                        <a>
+                            <img class="tile-img">
+                        </a>
+                    </div>
+                    <div class="tile-body">
+                    </div>
+                </div>
+
+                <div class="project-tile zipped">
+                    <div class="tile-head">
+                        <a>
+                            <img class="tile-img">
+                        </a>
+                    </div>
+                    <div class="tile-body">
+        
+                    </div>
+                </div>
+                <div class="project-tile zipped">
+                    <div class="tile-head">
+                        <a>
+                            <img class="tile-img">
+                        </a>
+                    </div>
+                    <div class="tile-body">
+                    </div>
+                </div>
+
+                <div class="project-tile zipped">
+                    <div class="tile-head">
+                        <a>
+                            <img class="tile-img">
+                        </a>
+                    </div>
+                    <div class="tile-body">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="contacts">
+            <div class="contact-methods hidden-bottom">
+                <div class="emails">  
+                    <div class="email-form">
+                        <div class="head-words">
+                            <h1 id="contact_me_scroll" class="blurred">Contact</h1>
+                            <p>Grab coffe blah blah blah Grab coffe blah blah blah Grab coffe blah blah blah</p>
+                        </div>
+                        <form action="https://formsubmit.co/markoh774@gmail.com" method="Post">
+                                <div class="firstRow">
+                                    <div class="fullNameArea">
+                                        <p class="cardHead">Name (Optional)</p>
+                                        <input class="fullName" name="name" type="text">
+                                    </div>
+                                    <div class="emailArea">
+                                        <p class="cardHead">Email*</p>
+                                        <input class="email" name="email" type="email"> 
+                                    </div>
+                                </div>
+                                <div class="messageArea">
+                                    <textarea class="message" cols="90" rows="10" name="message" id="email-text"></textarea>
+                                </div>
+                            <button type="submit"><p>Send</p></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="other">
+                    <div class="socials">
+                        <p>You can find me here too</p>
+                        <div class="logos">
+                            <a href="https://www.facebook.com/mark.oh.3785" class="socials-logo" rel="noreferrer noopener" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 62 60" fill="none">
+                                <path d="M61.0742 30.0752C61.0742 13.4737 47.6005 0 30.999 0C14.3975 0 0.923828 13.4737 0.923828 30.0752C0.923828 44.6316 11.2697 56.7519 24.984 59.5489V39.0977H18.9689V30.0752H24.984V22.5564C24.984 16.7519 29.7058 12.0301 35.5103 12.0301H43.0291V21.0526H37.0141C35.3599 21.0526 34.0065 22.406 34.0065 24.0602V30.0752H43.0291V39.0977H34.0065V60C49.1945 58.4962 61.0742 45.6842 61.0742 30.0752Z" fill="white"/>
+                            </svg>
+                            </a>
+                            <a href="https://www.instagram.com/oxowoo/" class="socials-logo" rel="noreferrer noopener" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 61 60" fill="none">
+                                    <path d="M33.1591 0C36.534 0.00899978 38.247 0.0269994 39.726 0.0689983L40.3079 0.0899977C40.9799 0.113997 41.6429 0.143996 42.4439 0.179995C45.6358 0.329992 47.8138 0.83398 49.7247 1.57496C51.7047 2.33694 53.3726 3.36892 55.0406 5.03388C56.5666 6.53304 57.7471 8.34721 58.4995 10.3497C59.2405 12.2607 59.7445 14.4386 59.8945 17.6336C59.9305 18.4316 59.9605 19.0945 59.9845 19.7695L60.0025 20.3515C60.0475 21.8275 60.0655 23.5404 60.0715 26.9153L60.0745 29.1533V33.0832C60.0818 35.2714 60.0588 37.4595 60.0055 39.647L59.9875 40.229C59.9635 40.904 59.9335 41.567 59.8975 42.365C59.7475 45.5599 59.2375 47.7348 58.4995 49.6488C57.7471 51.6513 56.5666 53.4655 55.0406 54.9647C53.5414 56.4907 51.7273 57.6712 49.7247 58.4236C47.8138 59.1646 45.6358 59.6686 42.4439 59.8186L40.3079 59.9085L39.726 59.9265C38.247 59.9685 36.534 59.9895 33.1591 59.9955L30.9212 59.9985H26.9943C24.8051 60.0063 22.6159 59.9833 20.4274 59.9295L19.8454 59.9115C19.1333 59.8846 18.4213 59.8536 17.7095 59.8186C14.5176 59.6686 12.3396 59.1646 10.4257 58.4236C8.42421 57.6708 6.61109 56.4903 5.1128 54.9647C3.58568 53.4658 2.4042 51.6516 1.65089 49.6488C0.909905 47.7378 0.405917 45.5599 0.255921 42.365L0.165923 40.229L0.150924 39.647C0.095623 37.4595 0.070621 35.2714 0.0759251 33.0832V26.9153C0.0676216 24.7272 0.0896234 22.539 0.141924 20.3515L0.162923 19.7695C0.186923 19.0945 0.216922 18.4316 0.252921 17.6336C0.402917 14.4386 0.906905 12.2637 1.64789 10.3497C2.40295 8.34639 3.58651 6.53215 5.1158 5.03388C6.61323 3.50856 8.42529 2.32816 10.4257 1.57496C12.3396 0.83398 14.5146 0.329992 17.7095 0.179995C18.5075 0.143996 19.1735 0.113997 19.8454 0.0899977L20.4274 0.071998C22.615 0.0186977 24.8031 -0.00430399 26.9913 0.00299971L33.1591 0ZM30.0752 14.9996C26.097 14.9996 22.2818 16.58 19.4689 19.3929C16.6559 22.2059 15.0756 26.0211 15.0756 29.9993C15.0756 33.9774 16.6559 37.7926 19.4689 40.6056C22.2818 43.4186 26.097 44.9989 30.0752 44.9989C34.0533 44.9989 37.8686 43.4186 40.6815 40.6056C43.4945 37.7926 45.0748 33.9774 45.0748 29.9993C45.0748 26.0211 43.4945 22.2059 40.6815 19.3929C37.8686 16.58 34.0533 14.9996 30.0752 14.9996ZM30.0752 20.9995C31.2571 20.9993 32.4274 21.2319 33.5194 21.684C34.6114 22.1361 35.6036 22.7988 36.4394 23.6344C37.2753 24.47 37.9384 25.462 38.3908 26.5538C38.8433 27.6456 39.0763 28.8159 39.0765 29.9978C39.0767 31.1796 38.8441 32.35 38.392 33.442C37.9399 34.5339 37.2771 35.5262 36.4416 36.362C35.606 37.1979 34.614 37.861 33.5222 38.3134C32.4303 38.7659 31.2601 38.9989 30.0782 38.9991C27.6913 38.9991 25.4022 38.0509 23.7144 36.3631C22.0266 34.6753 21.0784 32.3862 21.0784 29.9993C21.0784 27.6124 22.0266 25.3233 23.7144 23.6355C25.4022 21.9477 27.6913 20.9995 30.0782 20.9995M45.8278 10.4997C44.8333 10.4997 43.8795 10.8948 43.1762 11.5981C42.473 12.3013 42.0779 13.2551 42.0779 14.2497C42.0779 15.2442 42.473 16.198 43.1762 16.9012C43.8795 17.6045 44.8333 17.9996 45.8278 17.9996C46.8223 17.9996 47.7762 17.6045 48.4794 16.9012C49.1826 16.198 49.5777 15.2442 49.5777 14.2497C49.5777 13.2551 49.1826 12.3013 48.4794 11.5981C47.7762 10.8948 46.8223 10.4997 45.8278 10.4997Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/marko0124" class="socials-logo" rel="noreferrer noopener" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 61 60" fill="none">
+                                    <g clip-path="url(#clip0_1_4092)">
+                                    <path d="M30.0762 0C13.5012 0 0.0761719 13.425 0.0761719 30C0.0761719 43.275 8.66367 54.4875 20.5887 58.4625C22.0887 58.725 22.6512 57.825 22.6512 57.0375C22.6512 56.325 22.6137 53.9625 22.6137 51.45C15.0762 52.8375 13.1262 49.6125 12.5262 47.925C12.1887 47.0625 10.7262 44.4 9.45117 43.6875C8.40117 43.125 6.90117 41.7375 9.41367 41.7C11.7762 41.6625 13.4637 43.875 14.0262 44.775C16.7262 49.3125 21.0387 48.0375 22.7637 47.25C23.0262 45.3 23.8137 43.9875 24.6762 43.2375C18.0012 42.4875 11.0262 39.9 11.0262 28.425C11.0262 25.1625 12.1887 22.4625 14.1012 20.3625C13.8012 19.6125 12.7512 16.5375 14.4012 12.4125C14.4012 12.4125 16.9137 11.625 22.6512 15.4875C25.0512 14.8125 27.6012 14.475 30.1512 14.475C32.7012 14.475 35.2512 14.8125 37.6512 15.4875C43.3887 11.5875 45.9012 12.4125 45.9012 12.4125C47.5512 16.5375 46.5012 19.6125 46.2012 20.3625C48.1137 22.4625 49.2762 25.125 49.2762 28.425C49.2762 39.9375 42.2637 42.4875 35.5887 43.2375C36.6762 44.175 37.6137 45.975 37.6137 48.7875C37.6137 52.8 37.5762 56.025 37.5762 57.0375C37.5762 57.825 38.1387 58.7625 39.6387 58.4625C45.5951 56.4534 50.7712 52.6263 54.4377 47.5201C58.1041 42.4139 60.0763 36.2862 60.0762 30C60.0762 13.425 46.6512 0 30.0762 0Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_4092">
+                                        <rect width="60" height="60" fill="white" transform="translate(0.0761719)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/taewoong-oh/" class="socials-logo" rel="noreferrer noopener" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 61 60" fill="none">
+                                    <path d="M53.4095 0C55.1776 0 56.8733 0.702379 58.1235 1.95262C59.3738 3.20286 60.0762 4.89856 60.0762 6.66667V53.3333C60.0762 55.1014 59.3738 56.7971 58.1235 58.0474C56.8733 59.2976 55.1776 60 53.4095 60H6.74284C4.97473 60 3.27904 59.2976 2.02879 58.0474C0.778551 56.7971 0.0761719 55.1014 0.0761719 53.3333V6.66667C0.0761719 4.89856 0.778551 3.20286 2.02879 1.95262C3.27904 0.702379 4.97473 0 6.74284 0H53.4095ZM51.7428 51.6667V34C51.7428 31.118 50.598 28.354 48.5601 26.3161C46.5222 24.2782 43.7582 23.1333 40.8762 23.1333C38.0428 23.1333 34.7428 24.8667 33.1428 27.4667V23.7667H23.8428V51.6667H33.1428V35.2333C33.1428 32.6667 35.2095 30.5667 37.7762 30.5667C39.0139 30.5667 40.2008 31.0583 41.076 31.9335C41.9512 32.8087 42.4428 33.9957 42.4428 35.2333V51.6667H51.7428ZM13.0095 18.5333C14.4947 18.5333 15.9191 17.9433 16.9693 16.8931C18.0195 15.8429 18.6095 14.4185 18.6095 12.9333C18.6095 9.83333 16.1095 7.3 13.0095 7.3C11.5155 7.3 10.0826 7.89351 9.02614 8.94996C7.96968 10.0064 7.37617 11.4393 7.37617 12.9333C7.37617 16.0333 9.9095 18.5333 13.0095 18.5333ZM17.6428 51.6667V23.7667H8.4095V51.6667H17.6428Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <footer>
+        <p>Designed and Implemented by Mark</p>
+    </footer>
+</html>
+
