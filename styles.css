@@ -1,0 +1,514 @@
+@import url('https://fonts.cdnfonts.com/css/apercu-mono-pro');
+
+*{
+    scroll-behavior: smooth;
+    padding:0;
+    margin:0;
+    /* border: 2px solid green; */
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color : #ff5107;
+    --main-shadow-color:#FF8957;
+    --background-color: white;
+    --text-color: #FFFFFF;
+    --border-color: black;
+    --header-font: 'Apercu Mono Pro', sans-serif;
+    --text-font: -apple-system, BlinkMacSystemFont;
+}
+
+html{
+    width:100vw;
+    font-family: var(--header-font);
+}
+body { 
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x:hidden;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width: 100%;
+    display: flex;    
+    justify-content: start; 
+    background: var(--background-color);
+    min-height: 7%;
+    z-index: 99;
+}
+
+section{
+    display:block;
+}
+
+#navbar{
+    transition:top 0.3s;
+    left:0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    width: Fixed (1,618px)px;
+    height: Hug (72px)px;
+    top: 0px;
+    left: 0px;
+    gap: 0px;
+    align-items: center;
+}
+
+.logo{/* Group 6 */
+    font-size: 16px;
+    font-family: var(--header-font);
+    color:white;
+    text-align: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    padding-top: 22px;
+    padding-left: 5px;
+}
+
+#my-name{
+    font-size: 32px; 
+    text-align: left;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#my-name a:hover{
+    background-color: transparent;
+    font-size: 36px;
+}
+
+.section-divider{
+    padding-top: 50px;
+    margin: 150px 0;
+}
+
+
+nav ul{
+    padding-top: 10px;
+    text-align: right;
+    width:100%;
+    
+}
+
+li a{
+    color: black !important;
+}
+
+nav li{
+    font-family: var(--text-font);
+    font-weight: lighter;
+    display: inline;
+    margin: 0;
+    padding-right: 30px;
+    font-size: 16px;
+    line-height:23.87px
+}
+
+.welcome-section{
+    display:block flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+}
+
+.welcome-greet{
+    border-radius:200px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    text-align:left;
+    align-items: center;
+    gap:32px;
+    padding: 72px 110px;
+    width: 1207px;
+    height: 273px;
+    margin: 180px 0 200px 0;
+    filter: drop-shadow(0 0 0.75rem var(--main-shadow-color));
+    /* border: 3px solid blue; */
+}
+.welcome-greet h1{
+    position:relative;
+    color: white;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 500;
+    font-family: 'Apercu Mono Pro', sans-serif;
+}
+
+.ppic .rounded{
+    height: 131px;
+    width: 129px;
+}
+
+
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+
+.arrows{
+    margin:0 auto;
+    width: 50.93px;
+    height: 27px;
+    gap: 0px;
+    border: 6.4px 0px 0px 0px;
+    opacity: 0px;
+    animation: Bop 1s ease-in-out infinite;
+    padding-bottom: 160px;
+
+}
+
+#about-me{
+    display:block;
+}
+
+.text-img{
+    margin: 30px auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.sub-img{
+    margin-right: 90px;
+    object-fit: cover;
+    display: block;
+    height:280px !important;
+    width:300px !important;
+    border-radius:20px;
+    animation: fadeRight 1s linear;
+}
+.textbox{
+    width: 706px;
+    height:172px;
+    font-family: var(--text-font);
+    gap: 48px;
+    margin-bottom: 90px;
+}
+
+section p{
+    font-size: 24px;
+    margin: 24px 0;
+}
+#projects_scroll{
+    padding-top: 50px;
+}
+
+#projects{
+    margin-top: 100px;
+    display: block;
+}
+
+#projects h1{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.project-tiles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.project-tile{
+    width: 45%;
+    height: 41.3%;
+    gap: 0px;
+    border-radius: 32px;
+    opacity: 0px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index:1;
+    display: block;
+    background-color: var(--main-color);
+
+}
+.tile-head{
+    width:100%;
+    height: 40%;
+   
+}
+
+.tile-img{
+    background-image: url(https://i.postimg.cc/RhbXkdk8/image.png);
+    object-fit: scale-down;
+    width:100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    z-index: 2;
+    left:0;
+}
+
+.tile-body{
+    width: 100%;
+    height: 48%;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.tile-body h2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.project-description{
+    font-size:20px;
+    margin: 0 auto 7% auto;
+    padding: 5%;
+    text-align: left;
+    border-radius: 20px;
+    width: 90%;
+    height: 60%;
+}
+
+.tile-foot{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    float:right;
+    font-size: 10px;
+    width: 100px;
+}
+
+.tile-foot p{
+    padding-left: 10px;
+    color:white;
+    font-size: 15px;
+}
+
+.contacts{
+    overflow-y:hidden;
+    width:100%;
+    height: 150vh;
+    margin-top:auto;
+    background-color: #191919;
+    color:white;
+    font-family: var(--text-font);
+    text-align:left !important;
+}
+
+
+.head-words{
+    width:50%;
+    color:white;
+}
+
+.contacts h1{
+    text-align: left !important;
+    color:white;
+    font-weight: 100ƒ;
+
+}
+.head-words h1{
+    color: var(--warning-contrast, #FFF);
+    font-family: "Apercu Mono Pro";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.head-words p{
+    margin:20px 0;
+    width:100%;
+
+}
+.firstRow p{
+    margin-top:50px;
+    color: var(--warning-contrast, #FFF);
+    font-family: "SF Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-methods{
+    display:flex;
+    justify-self: center;
+    width:100%;
+    height: 75vh;
+    padding-top:15px;
+    border: 2px solid black;
+    border-bottom: transparent;
+}
+
+.email-form{
+    padding-left: 100px;
+}
+
+.emails{
+    padding-top:160px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:120vh;
+    width: 50%;
+    flex-direction: column;
+}
+
+
+.emails button{
+    display: flex;
+    padding: 9.521px 23.803px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:72px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+}
+
+button p{
+    color: var(--warning-contrast, #FFF);
+    font-family: 'Roboto';
+    font-size: 30.943px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 52.366px; /* 169.231% */
+    letter-spacing: 1.095px;
+    text-transform: capitalize;
+}
+
+textarea, input{
+    padding-left: 10px;
+    color:white;
+    display: block;
+    border-radius: 5px;
+    font-size: 24px;
+    width:100%;
+}
+
+textarea{
+    border-radius: 12px;
+    border: 1px solid #D9D9D9;
+    background: rgba(217, 217, 217, 0.04);
+    height: 211px;
+    margin: 52px 0;
+    padding-top: 10px;
+}
+
+input{
+    margin-top:12px;
+    height: 70px;
+    border-radius: 12px;
+    border: 1px solid #D9D9D9;
+    background: rgba(217, 217, 217, 0.04);
+}
+.other{
+    padding-top:160px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:120vh;
+    width: 50%;
+}
+.socials{
+    width:428px;
+    height:248px;
+    display: inline;
+    padding: 55px 45px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--main-color);
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    border-radius: 32px;
+}
+
+.socials p{
+    margin:auto;
+    color: var(--warning-contrast, #FFF);
+    font-family: "SF Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+}
+
+.logos{
+    width: 90%;
+    padding-left:14px;
+    height: 50px;
+    margin:45px auto;
+}
+
+.socials-logo {
+    margin: 12px;
+    font-size: 42px ;
+    width: 30px;
+    height:30px;
+    /* background: black !important; */
+    color:white !important;
+}
+
+a{
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    color:black;
+}
+
+nav a:hover{
+    color: gainsboro;
+}
+.socials-logo a:hover{
+    color: rgb(62, 58, 58);
+}
+a:visited{
+    color: var(--text-color);
+}
+
+.emphasis{
+    color: var(--main-color)
+}
+h1{
+    font-size: 56px;
+    font-weight: 400 ;
+    line-height: 56px ;
+    text-align: center ;
+    font-family: var(--header-font);
+}
+
+
+
+footer{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    background-color: var(--main-color);
+    color:black;
+    border: 2px solid black;
+    align-items:center;    
+    font-size: 20px;
+    height:60px;
+}
