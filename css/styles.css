@@ -14,8 +14,9 @@
     --main-color : #ff5107;
     --main-shadow-color:#FF8957;
     --background-color: white;
-    --text-color: #FFFFFF;
+    --text-color: #0f0f0f;
     --border-color: black;
+    --hover-color: gainsboro;
     --header-font: 'Apercu Mono Pro', sans-serif;
     --text-font: -apple-system, BlinkMacSystemFont;
 }
@@ -97,17 +98,23 @@ section{
 nav ul{
     padding-top: 10px;
     text-align: right;
-    width:100%;
-    
+    width:100%;    
 }
 
 li a{
-    color: black !important;
+    color: black;
+    font-weight: 300;
+    font-size: 14px;
+
+}
+
+#navbar a:hover{
+    color: var(--hover-color);
 }
 
 nav li{
     font-family: var(--text-font);
-    font-weight: lighter;
+    font-weight: 100;
     display: inline;
     margin: 0;
     padding-right: 30px;
@@ -133,8 +140,8 @@ nav li{
     align-items: center;
     gap:32px;
     padding: 72px 110px;
-    width: 1207px;
-    height: 273px;
+    width: 990px;
+    height: 230px;
     margin: 180px 0 200px 0;
     filter: drop-shadow(0 0 0.75rem var(--main-shadow-color));
     /* border: 3px solid blue; */
@@ -234,22 +241,20 @@ section p{
 }
 
 .project-tile{
-    width: 45%;
-    height: 41.3%;
+    width: 500px;
+    height: 458.2px;
     gap: 0px;
-    border-radius: 32px;
-    opacity: 0px;
-    height: 600px;
+    border-radius: 20px;
     object-fit: cover;
-    border-radius: 10px;
     z-index:1;
-    display: block;
+    display:flex;
+    flex-direction: column;
     background-color: var(--main-color);
 
 }
 .tile-head{
     width:100%;
-    height: 40%;
+    height: 325px;
    
 }
 
@@ -258,46 +263,66 @@ section p{
     object-fit: scale-down;
     width:100%;
     height: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
     z-index: 2;
     left:0;
 }
 
 .tile-body{
     width: 100%;
-    height: 48%;
-    border-radius: 0 0 5px 5px;
-}
+    height: 133.2px;
+    border-radius: 0 0 20px 20px;
 
+}
 
 .tile-body h2{
     text-align: center;
     padding-top: 10px;
 }
+/* A flash game from the past by the name of Frogger. Made on Assembly. + Text about the project and software I used highlighted.
+                            And a Link to the repository on github. */
 
 .project-description{
-    font-size:20px;
-    margin: 0 auto 7% auto;
-    padding: 5%;
+    font-size:18px;
+    padding:18px 36px;
+    margin: 0 auto;
     text-align: left;
-    border-radius: 20px;
-    width: 90%;
-    height: 60%;
 }
 
-.tile-foot{
+.repo-link{
+    right:10px;
+    bottom:0;
+    position:absolute;
     display:flex;
-    align-items: center;
     flex-direction: column;
-    float:right;
-    font-size: 10px;
-    width: 100px;
+    align-items: center;
+    width:15%;
+    height:15%;
+}
+.repo-link .fa{
+    font-size:32px;
+    margin-bottom: 3px;
+    color:black;
+}
+.repo p{
+    color:black;
+    font-size: 16px;
+    margin-top:-6px;
 }
 
-.tile-foot p{
-    padding-left: 10px;
-    color:white;
-    font-size: 15px;
+.repo-link a:hover{
+    color: var(--hover-color);
+}
+.repo-link p:hover{
+    color: var(--hover-color);
+}
+
+#contact_me_scroll{
+    transform: translateY(600%);
+    width: 100%;
+    height: 20px;
+    position:absolute;
+    transform-origin: bottom left;
 }
 
 .contacts{
@@ -321,6 +346,7 @@ section p{
     text-align: left !important;
     color:white;
     font-weight: 100ƒ;
+    font-size: 45px !important;
 
 }
 .head-words h1{
@@ -330,18 +356,19 @@ section p{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top:-180px;
 }
 
 .head-words p{
-    margin:20px 0;
+    margin:10px 0;
     width:100%;
 
 }
 .firstRow p{
-    margin-top:50px;
+    margin-top:20px;
     color: var(--warning-contrast, #FFF);
     font-family: "SF Pro";
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -379,7 +406,7 @@ section p{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height:72px;
+    height:60px;
     border-radius: 50px;
     background-color: var(--main-color);
 }
@@ -408,14 +435,14 @@ textarea{
     border-radius: 12px;
     border: 1px solid #D9D9D9;
     background: rgba(217, 217, 217, 0.04);
-    height: 211px;
+    height: 180px;
     margin: 52px 0;
     padding-top: 10px;
 }
 
 input{
-    margin-top:12px;
-    height: 70px;
+    margin-top:0px;
+    height: 50px;
     border-radius: 12px;
     border: 1px solid #D9D9D9;
     background: rgba(217, 217, 217, 0.04);
@@ -475,11 +502,11 @@ a{
     font-weight: bold;
     font-size: 1em;
     text-decoration: none;
-    color:black;
+    color:black; 
 }
 
-nav a:hover{
-    color: gainsboro;
+#navbar a:hover{
+    color: var(--hover-color);
 }
 .socials-logo a:hover{
     color: rgb(62, 58, 58);
