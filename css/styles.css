@@ -140,8 +140,8 @@ nav li{
     align-items: center;
     gap:32px;
     padding: 72px 110px;
-    width: 990px;
-    height: 230px;
+    width: 780px;
+    height: 190px;
     margin: 180px 0 200px 0;
     filter: drop-shadow(0 0 0.75rem var(--main-shadow-color));
     /* border: 3px solid blue; */
@@ -149,15 +149,15 @@ nav li{
 .welcome-greet h1{
     position:relative;
     color: white;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 48px;
     font-weight: 500;
     font-family: 'Apercu Mono Pro', sans-serif;
 }
 
 .ppic .rounded{
-    height: 131px;
-    width: 129px;
+    height: 112px;
+    width: 110px;
 }
 
 
@@ -197,21 +197,21 @@ img.rounded {
     margin-right: 90px;
     object-fit: cover;
     display: block;
-    height:280px !important;
-    width:300px !important;
+    height:224px !important;
+    width:240px !important;
     border-radius:20px;
     animation: fadeRight 1s linear;
 }
 .textbox{
-    width: 706px;
+    width: 620px;
     height:172px;
     font-family: var(--text-font);
     gap: 48px;
-    margin-bottom: 90px;
+    margin-bottom: 65px;
 }
 
 section p{
-    font-size: 24px;
+    font-size: 20px;
     margin: 24px 0;
 }
 #projects_scroll{
@@ -225,7 +225,7 @@ section p{
 
 #projects h1{
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .project-tiles{
@@ -241,8 +241,8 @@ section p{
 }
 
 .project-tile{
-    width: 500px;
-    height: 458.2px;
+    width: 450px;
+    height: 412.4px;
     gap: 0px;
     border-radius: 20px;
     object-fit: cover;
@@ -251,20 +251,40 @@ section p{
     flex-direction: column;
     background-color: var(--main-color);
     border: 2px solid black;
+    margin-bottom: 90px;
 
 }
 .tile-head{
     width:100%;
-    height: 40%;
-   
+    height: 300px;
+}
+
+.tile-foot{
+    display: flex;
+    /* border: 2px solid green; */
+    width: 4rem;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 430px;
+    margin-top: -42px;
+}
+
+.tile-repo{
+    /* margin-top:  */
+    height: 12px;
+    font-size: 12px;
+}
+.tile-foot .fa{
+    margin:0;
+    font-size: 2rem;
 }
 
 .tile-img{
     object-fit: cover;
     width:100%;
-    height: 100%;
-    border-radius: 10px 10px 0 0;
-    z-index: 2;
+    height:285px;
+    /* height: 80%; */
+    border-radius: 20px 20px 0 0;
     left:0;
 }
 
@@ -327,13 +347,13 @@ section p{
     text-align: left !important;
     color:white;
     font-weight: 100ƒ;
-    font-size: 45px !important;
+    font-size: 40px !important;
 
 }
 .head-words h1{
     color: var(--warning-contrast, #FFF);
     font-family: "Apercu Mono Pro";
-    font-size: 60px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -416,7 +436,7 @@ textarea{
     border-radius: 12px;
     border: 1px solid #D9D9D9;
     background: rgba(217, 217, 217, 0.04);
-    height: 180px;
+    height: 120px;
     margin: 52px 0;
     padding-top: 10px;
 }
@@ -437,8 +457,8 @@ input{
     width: 50%;
 }
 .socials{
-    width:428px;
-    height:248px;
+    width:390px;
+    height:226px;
     display: inline;
     padding: 55px 45px;
     flex-direction: column;
@@ -457,14 +477,14 @@ input{
     margin:auto;
     color: var(--warning-contrast, #FFF);
     font-family: "SF Pro";
-    font-size: 30px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 510;
     line-height: normal;
 }
 
 .logos{
-    width: 90%;
+    width: 100%;
     padding-left:14px;
     height: 50px;
     margin:45px auto;
@@ -472,9 +492,9 @@ input{
 
 .socials-logo {
     margin: 12px;
-    font-size: 42px ;
-    width: 30px;
-    height:30px;
+    font-size: 32px ;
+    width: 20px;
+    height:20px;
     /* background: black !important; */
     color:white !important;
 }
@@ -502,7 +522,7 @@ a:visited{
 
 
 h1{
-    font-size: 56px;
+    font-size: 42px;
     font-weight: 400 ;
     line-height: 56px ;
     text-align: center ;
