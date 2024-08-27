@@ -256,17 +256,19 @@ section p{
 }
 .tile-head{
     width:100%;
-    height: 300px;
+    height: 247px;
+    margin-bottom: 14px;
 }
 
 .tile-foot{
     display: flex;
     /* border: 2px solid green; */
-    width: 4rem;
+    width: 2rem;
     align-items: center;
     flex-direction: column;
-    margin-left: 430px;
-    margin-top: -42px;
+    margin-left: 390px;
+    margin-top: -50px;
+    font-size: 10px;
 }
 
 .tile-repo{
@@ -282,7 +284,7 @@ section p{
 .tile-img{
     object-fit: cover;
     width:100%;
-    height:285px;
+    height:245px;
     /* height: 80%; */
     border-radius: 20px 20px 0 0;
     left:0;
@@ -290,46 +292,43 @@ section p{
 
 .tile-body{
     width: 100%;
-    height: 48%;
+    height: 140px;
     border-radius: 0 0 5px 5px;
 }
 
 
 .tile-body h2{
+    font-size: 22px;
     text-align: center;
-    padding-top: 10px;
 }
 /* A flash game from the past by the name of Frogger. Made on Assembly. + Text about the project and software I used highlighted.
                             And a Link to the repository on github. */
 
 .project-description{
-    font-size:20px;
-    margin: 0 auto 7% auto;
-    padding: 5%;
+    font-size:18px;
+    margin: 0 auto;
+    padding: 2%;
     text-align: left;
     border-radius: 20px;
     width: 90%;
     height: 60%;
 }
 
-.tile-foot{
-    display:flex;
-    flex-direction: column;
-    float:right;
-    font-size: 10px;
-    width: 100px;
+#imp-word{
+    color: white;
 }
 
 .tile-foot p{
     padding-left: 10px;
     color:white;
     font-size: 15px;
+
 }
 
 .contacts{
     overflow-y:hidden;
     width:100%;
-    height: 150vh;
+    height: 130vh;
     margin-top:auto;
     background-color: #191919;
     color:white;
