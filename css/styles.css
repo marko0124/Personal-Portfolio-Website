@@ -256,7 +256,7 @@ section p{
 }
 .tile-head{
     width:100%;
-    height: 300px;
+    height: 240px;
 }
 
 .tile-foot{
@@ -265,8 +265,8 @@ section p{
     width: 4rem;
     align-items: center;
     flex-direction: column;
-    margin-left: 430px;
-    margin-top: -42px;
+    margin-left: 390px;
+    margin-bottom: 2000px;
 }
 
 .tile-repo{
@@ -282,7 +282,7 @@ section p{
 .tile-img{
     object-fit: cover;
     width:100%;
-    height:285px;
+    height:220px;
     /* height: 80%; */
     border-radius: 20px 20px 0 0;
     left:0;
@@ -290,10 +290,12 @@ section p{
 
 .tile-body{
     width: 100%;
-    height: 48%;
-    border-radius: 0 0 5px 5px;
-}
+    height: 133.2px;
+    border-radius: 0 0 20px 20px;
+    z-index: 3;
+    /* border: 2px solid green; */
 
+}
 
 .tile-body h2{
     text-align: center;
@@ -303,27 +305,48 @@ section p{
                             And a Link to the repository on github. */
 
 .project-description{
-    font-size:20px;
-    margin: 0 auto 7% auto;
-    padding: 5%;
+    font-size:18px;
+    padding:8px 36px;
+    margin: 0 auto;
     text-align: left;
-    border-radius: 20px;
-    width: 90%;
-    height: 60%;
+}
+#imp-word{
+    color: white;
 }
 
-.tile-foot{
+.repo-link{
+    right:10px;
+    bottom:0;
+    position:absolute;
     display:flex;
     flex-direction: column;
-    float:right;
-    font-size: 10px;
-    width: 100px;
+    align-items: center;
+    width:15%;
+    height:15%;
+}
+.repo-link .fa{
+    font-size:32px;
+    margin-bottom: 3px;
+    color:black;
+}
+.repo p{
+    color:black;
+    margin-top:-6px;
 }
 
-.tile-foot p{
-    padding-left: 10px;
-    color:white;
-    font-size: 15px;
+.repo-link a:hover{
+    color: var(--hover-color);
+}
+.repo-link p:hover{
+    color: var(--hover-color);
+}
+
+#contact_me_scroll{
+    transform: translateY(600%);
+    width: 100%;
+    height: 20px;
+    position:absolute;
+    transform-origin: bottom left;
 }
 
 .contacts{
@@ -347,13 +370,13 @@ section p{
     text-align: left !important;
     color:white;
     font-weight: 100ƒ;
-    font-size: 40px !important;
+    font-size: 45px !important;
 
 }
 .head-words h1{
     color: var(--warning-contrast, #FFF);
     font-family: "Apercu Mono Pro";
-    font-size: 48px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -436,7 +459,7 @@ textarea{
     border-radius: 12px;
     border: 1px solid #D9D9D9;
     background: rgba(217, 217, 217, 0.04);
-    height: 120px;
+    height: 180px;
     margin: 52px 0;
     padding-top: 10px;
 }
@@ -457,8 +480,8 @@ input{
     width: 50%;
 }
 .socials{
-    width:390px;
-    height:226px;
+    width:428px;
+    height:248px;
     display: inline;
     padding: 55px 45px;
     flex-direction: column;
@@ -477,14 +500,14 @@ input{
     margin:auto;
     color: var(--warning-contrast, #FFF);
     font-family: "SF Pro";
-    font-size: 26px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 510;
     line-height: normal;
 }
 
 .logos{
-    width: 100%;
+    width: 90%;
     padding-left:14px;
     height: 50px;
     margin:45px auto;
@@ -492,9 +515,9 @@ input{
 
 .socials-logo {
     margin: 12px;
-    font-size: 32px ;
-    width: 20px;
-    height:20px;
+    font-size: 42px ;
+    width: 30px;
+    height:30px;
     /* background: black !important; */
     color:white !important;
 }
