@@ -256,17 +256,31 @@ section p{
 }
 .tile-head{
     width:100%;
+<<<<<<< HEAD
     height: 240px;
+=======
+    height: 247px;
+    margin-bottom: 14px;
+>>>>>>> refs/remotes/origin/main
 }
 
 .tile-foot{
     display: flex;
     /* border: 2px solid green; */
+<<<<<<< HEAD
     width: 4rem;
     align-items: center;
     flex-direction: column;
     margin-left: 390px;
     margin-bottom: 2000px;
+=======
+    width: 2rem;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 390px;
+    margin-top: -50px;
+    font-size: 10px;
+>>>>>>> refs/remotes/origin/main
 }
 
 .tile-repo{
@@ -282,7 +296,11 @@ section p{
 .tile-img{
     object-fit: cover;
     width:100%;
+<<<<<<< HEAD
     height:220px;
+=======
+    height:245px;
+>>>>>>> refs/remotes/origin/main
     /* height: 80%; */
     border-radius: 20px 20px 0 0;
     left:0;
@@ -290,30 +308,42 @@ section p{
 
 .tile-body{
     width: 100%;
+<<<<<<< HEAD
     height: 133.2px;
     border-radius: 0 0 20px 20px;
     z-index: 3;
     /* border: 2px solid green; */
+=======
+    height: 140px;
+    border-radius: 0 0 5px 5px;
+}
+>>>>>>> refs/remotes/origin/main
 
 }
 
 .tile-body h2{
+    font-size: 22px;
     text-align: center;
-    padding-top: 10px;
 }
 /* A flash game from the past by the name of Frogger. Made on Assembly. + Text about the project and software I used highlighted.
                             And a Link to the repository on github. */
 
 .project-description{
     font-size:18px;
+<<<<<<< HEAD
     padding:8px 36px;
     margin: 0 auto;
+=======
+    margin: 0 auto;
+    padding: 2%;
+>>>>>>> refs/remotes/origin/main
     text-align: left;
 }
 #imp-word{
     color: white;
 }
 
+<<<<<<< HEAD
 .repo-link{
     right:10px;
     bottom:0;
@@ -347,12 +377,23 @@ section p{
     height: 20px;
     position:absolute;
     transform-origin: bottom left;
+=======
+#imp-word{
+    color: white;
+}
+
+.tile-foot p{
+    padding-left: 10px;
+    color:white;
+    font-size: 15px;
+
+>>>>>>> refs/remotes/origin/main
 }
 
 .contacts{
     overflow-y:hidden;
     width:100%;
-    height: 150vh;
+    height: 130vh;
     margin-top:auto;
     background-color: #191919;
     color:white;
@@ -370,13 +411,13 @@ section p{
     text-align: left !important;
     color:white;
     font-weight: 100ƒ;
-    font-size: 45px !important;
+    font-size: 40px !important;
 
 }
 .head-words h1{
     color: var(--warning-contrast, #FFF);
     font-family: "Apercu Mono Pro";
-    font-size: 60px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -459,7 +500,7 @@ textarea{
     border-radius: 12px;
     border: 1px solid #D9D9D9;
     background: rgba(217, 217, 217, 0.04);
-    height: 180px;
+    height: 120px;
     margin: 52px 0;
     padding-top: 10px;
 }
@@ -480,8 +521,8 @@ input{
     width: 50%;
 }
 .socials{
-    width:428px;
-    height:248px;
+    width:390px;
+    height:226px;
     display: inline;
     padding: 55px 45px;
     flex-direction: column;
@@ -500,14 +541,14 @@ input{
     margin:auto;
     color: var(--warning-contrast, #FFF);
     font-family: "SF Pro";
-    font-size: 30px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 510;
     line-height: normal;
 }
 
 .logos{
-    width: 90%;
+    width: 100%;
     padding-left:14px;
     height: 50px;
     margin:45px auto;
@@ -515,9 +556,9 @@ input{
 
 .socials-logo {
     margin: 12px;
-    font-size: 42px ;
-    width: 30px;
-    height:30px;
+    font-size: 32px ;
+    width: 20px;
+    height:20px;
     /* background: black !important; */
     color:white !important;
 }
