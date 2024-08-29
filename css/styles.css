@@ -256,31 +256,19 @@ section p{
 }
 .tile-head{
     width:100%;
-<<<<<<< HEAD
-    height: 240px;
-=======
     height: 247px;
     margin-bottom: 14px;
->>>>>>> refs/remotes/origin/main
 }
 
 .tile-foot{
     display: flex;
     /* border: 2px solid green; */
-<<<<<<< HEAD
-    width: 4rem;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 390px;
-    margin-bottom: 2000px;
-=======
     width: 2rem;
     align-items: center;
     flex-direction: column;
     margin-left: 390px;
     margin-top: -50px;
     font-size: 10px;
->>>>>>> refs/remotes/origin/main
 }
 
 .tile-repo{
@@ -296,11 +284,7 @@ section p{
 .tile-img{
     object-fit: cover;
     width:100%;
-<<<<<<< HEAD
-    height:220px;
-=======
     height:245px;
->>>>>>> refs/remotes/origin/main
     /* height: 80%; */
     border-radius: 20px 20px 0 0;
     left:0;
@@ -308,18 +292,10 @@ section p{
 
 .tile-body{
     width: 100%;
-<<<<<<< HEAD
-    height: 133.2px;
-    border-radius: 0 0 20px 20px;
-    z-index: 3;
-    /* border: 2px solid green; */
-=======
     height: 140px;
     border-radius: 0 0 5px 5px;
 }
->>>>>>> refs/remotes/origin/main
 
-}
 
 .tile-body h2{
     font-size: 22px;
@@ -330,54 +306,14 @@ section p{
 
 .project-description{
     font-size:18px;
-<<<<<<< HEAD
-    padding:8px 36px;
-    margin: 0 auto;
-=======
     margin: 0 auto;
     padding: 2%;
->>>>>>> refs/remotes/origin/main
     text-align: left;
-}
-#imp-word{
-    color: white;
-}
-
-<<<<<<< HEAD
-.repo-link{
-    right:10px;
-    bottom:0;
-    position:absolute;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:15%;
-    height:15%;
-}
-.repo-link .fa{
-    font-size:32px;
-    margin-bottom: 3px;
-    color:black;
-}
-.repo p{
-    color:black;
-    margin-top:-6px;
+    border-radius: 20px;
+    width: 90%;
+    height: 60%;
 }
 
-.repo-link a:hover{
-    color: var(--hover-color);
-}
-.repo-link p:hover{
-    color: var(--hover-color);
-}
-
-#contact_me_scroll{
-    transform: translateY(600%);
-    width: 100%;
-    height: 20px;
-    position:absolute;
-    transform-origin: bottom left;
-=======
 #imp-word{
     color: white;
 }
@@ -387,7 +323,6 @@ section p{
     color:white;
     font-size: 15px;
 
->>>>>>> refs/remotes/origin/main
 }
 
 .contacts{
